@@ -1,0 +1,25 @@
+{
+  "name": "formulario-aprende-a-programar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BR2E/formulario-aprende-a-programar.git"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Efren Ruiz <Efren.BR2E@gmail.com> (BR2E)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BR2E/formulario-aprende-a-programar/issues"
+  },
+  "homepage": "https://github.com/BR2E/formulario-aprende-a-programar#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
