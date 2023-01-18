@@ -1,16 +1,16 @@
-.main{
+.main {
     @include mixinFlex;
     padding: 80px 10px 10px;
     text-align: center;
 
-    &__title{
+    &__title {
         color: white;
         font-size: 2rem;
         font-weight: 700;
         padding-bottom: 20px;
     }
 
-    &__text{
+    &__text {
         color: white;
         font-size: 1.2rem;
         font-weight: 400;
@@ -18,14 +18,16 @@
 }
 
 
-.form{
+.form {
     @include mixinFlex;
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 50px;
-    
-    &__message{
+    padding: 0 20px;
+
+    &__message {
+        width: 100%;
         padding: 20px 40px;
         background-color: $Blue;
         color: white;
@@ -36,7 +38,87 @@
 
     }
 
-    &__message--span{
+    &__message--span {
         font-weight: 600;
+    }
+}
+
+.form__formulario {
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    padding: 20px;
+
+    &--text {
+        width: 100%;
+        padding: 15px 10px;
+        border: 1px solid rgba($DarkBlue, 0.4);
+        color: rgba($DarkBlue, 0.4);
+        font-size: 1rem;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    &--boton {
+        width: 100%;
+        background-color: $Green;
+        padding: 15px 10px;
+        font-size: 1.2rem;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.form__terminos {
+    width: 100%;
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    padding: 20px;
+    color: $DarkBlue;
+    font-size: 0.7rem;
+
+    a {
+        color: $Red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 80px repeat(2, 200px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        grid-area: 2/1/4/2;
+        text-align: left;
+
+        &__title {
+            font-size: 3rem;
+        }
+    
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+    .form{
+        grid-area: 1/2/4/3;
+    }
+
+    .form__terminos{
+        font-size: 1rem;
     }
 }

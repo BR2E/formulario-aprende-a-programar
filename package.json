@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compilar-sass":"node-sass ./sass/main.scss ./src/estilos/estilos.css",
-    "compilar-sass-watch":"sass --watch sass:./src/estilos"
+    "compilar-sass":"node-sass ./sass/main.scss ./src/estilos/estilos.css"
   },
   "repository": {
     "type": "git",
