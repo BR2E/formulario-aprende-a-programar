@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
-.container{
-    background-image: url(../images/bg-intro-mobile.png);
+body {
+    background-image: linear-gradient(to right bottom,
+            rgba($Red, 0.7),
+            rgba($Red, 0.7)), url(../../images/bg-intro-desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 62.5%;
 }

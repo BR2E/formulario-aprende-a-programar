@@ -1,0 +1,42 @@
+.main{
+    @include mixinFlex;
+    padding: 80px 10px 10px;
+    text-align: center;
+
+    &__title{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    &__text{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+
+.form{
+    @include mixinFlex;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 50px;
+    
+    &__message{
+        padding: 20px 40px;
+        background-color: $Blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+    }
+
+    &__message--span{
+        font-weight: 600;
+    }
+}
