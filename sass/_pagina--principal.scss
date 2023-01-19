@@ -57,7 +57,8 @@
         border: 1px solid rgba($DarkBlue, 0.4);
         color: rgba($DarkBlue, 0.4);
         font-size: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
+        margin-top: 10px;
         border-radius: 8px;
         outline: none;
     }
@@ -72,6 +73,7 @@
         border-radius: 4px;
         text-align: center;
         cursor: pointer;
+        margin-top: 10px;
     }
 }
 
@@ -92,14 +94,23 @@
     }
 }
 
+.error{
+    color: red;
+    font-size: 1rem;
+}
+.inactive{
+    display: none;
+}
+
 
 @media (min-width: 1200px) {
+
     .container {
         display: grid;
         grid-template-columns: 600px 600px;
         grid-template-rows: 80px repeat(2, 200px);
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .main {
@@ -116,9 +127,15 @@
     }
     .form{
         grid-area: 1/2/4/3;
+        margin: 0;
     }
 
     .form__terminos{
         font-size: 1rem;
+    }
+
+    .error{
+        color: red;
+        text-align: start;
     }
 }
