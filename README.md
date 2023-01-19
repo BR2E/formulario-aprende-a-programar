@@ -24,3 +24,4 @@ Este es un desafío de la plataforma Frontend Mentor, el ejercicio consiste en c
 ## Imágenes del proyecto
 
 ![](./design/Captura%20desde%202023-01-18%2013-23-10.png)
+![](./design/Captura%20desde%202023-01-19%2010-09-41.png)
