@@ -32,18 +32,26 @@
 
         <div class="form">
             <button class="form__message">
-               <span class="form__message--span">Pruébelo gratis 7 días </span> y <br> luego $20/mes. después de eso
+                <span class="form__message--span">Pruébelo gratis 7 días </span> y <br> luego $20/mes. después de eso
             </button>
 
             <form action="" class="form__formulario">
                 <input type="text" id="nombre" class="form__formulario--text" placeholder="Nombre">
-                <p class="error inactive">Este campo debe de tener un minimo de 10 letras</p>
+                <div class="errorNombre">
+                    <!-- <p class="error ">Este campo debe de tener un minimo de 10 letras</p> -->
+                </div>
                 <input type="text" id="apellido" class="form__formulario--text" placeholder="Apellido">
-                <p class="error inactive">Este campo debe de tener un minimo de 10 letras</p>
+                <div class="errorApellido">
+                    <!-- <p class="error ">Este campo debe de tener un minimo de 10 letras</p> -->
+                </div>
                 <input type="email" id="email" class="form__formulario--text" placeholder="Email">
-                <p class="error inactive">Este campo debe de tener el formato completo</p>
+                <div class="errorEmail">
+                    <!-- <p class="error ">Este campo debe de tener el formato completo</p> -->
+                </div>
                 <input type="password" id="contrasena" class="form__formulario--text" placeholder="Contraseña">
-                <p class="error inactive">Este campo debe de tener el formato completo</p>
+                <div class="errorContrasena">
+                    <!-- <p class="error ">Este campo debe de tener el formato completo</p> -->
+                </div>
                 <input type="button" value="Reclama tu prueba gratis" class="form__formulario--boton">
             </form>
 
@@ -54,7 +62,7 @@
 
     </div>
 
-
+    <script src="../dist/main.js"></script>
 </body>
 
 </html>
